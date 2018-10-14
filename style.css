@@ -1,0 +1,9 @@
+/*===============================
+Common CSS Styles
+================================*/
+
+/*remove browser default settings*/
+* {
+margin = 0;
+padding = 0;
+}
