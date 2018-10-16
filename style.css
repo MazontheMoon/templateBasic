@@ -1,13 +1,24 @@
+/*========================
+Declare variables at top
+=========================*/
+:root{
+  --white: #FFF;  
+}
+
 /*===============================
 Common CSS Styles
 ================================*/
 
 /*remove browser default settings*/
-* {
+html {
 margin = 0;
 padding = 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+ 
 /*=================================
 MEDIA QUERIES
 ==================================*/
