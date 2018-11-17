@@ -1,0 +1,223 @@
+/*==================================
+My practice and cheatsheet CSS page
+===================================*/
+
+/*================
+declare variables
+=================*/
+:root {
+  
+}
+
+/*===============
+main page layout
+================*/
+
+/*===============
+section layout
+================*/
+.style {
+  border: solid 3px black;
+  margin: 5px;
+}
+
+.style div {
+  height: 100px;
+}
+
+.style #style_bg_color {
+  background-color: #0091EA;
+}
+
+.style #style_bg_colorGl {
+  background: linear-gradient(50deg, blue, purple, white);
+}
+
+.style #style_bg_colorGr {
+  background: radial-gradient(blue, purple, white);
+}
+.style #style_bg_image {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+}
+
+.style #style_bg_image_rep_h {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  background-repeat: repeat-x;
+  color: white;
+}
+
+.style #style_bg_image_rep_v {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  background-repeat: repeat-y;
+  color: white;
+}
+
+.style #style_bg_image_norep {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.style #style_bg_image_position {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.style #style_bg_image_position_fixed {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  background-attachment: fixed;
+}
+
+.style #style_bg_image_clip {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  background-clip: border-box;
+}
+
+.style #style_bg_image_clipP {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  background-clip: padding-box;
+}
+
+.style #style_bg_image_clipC {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  background-clip: content-box;
+}
+
+.style #style_bg_image_origin {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  background-origin: padding-box;
+}
+
+.style #style_bg_image_originC {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  background-origin: content-box;
+}
+
+.style #style_bg_image_originB {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  background-origin: border-box;
+}
+
+.style #style_bg_image_size {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  background-size: 75%;
+  background-repeat: no-repeat;
+}
+
+.style #style_bg_image_sizeCover {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  background-size: cover;
+ 
+}
+
+.style #style_bg_image_sizeContain {
+  background-image: url("https://images.unsplash.com/photo-1523958631412-cd125bb67e58?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjI0MX0&s=f3cec854d0d701f5099f449d9db91e54&auto=format&fit=crop&w=1319&q=80");
+  color: white;
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+}
+
+.borders div {
+  padding: 5px;
+  margin: 5px;
+}
+.style #style_borderSolid {
+  border-style: solid;
+}
+
+.style #style_borderDotted {
+  border-style: dotted;
+}
+
+.style #style_borderDashed {
+  border-style: dashed;
+}
+
+.style #style_borderDouble {
+  border-style: double;
+}
+
+.style #style_borderGroove {
+  border-style: groove;
+}
+
+.style #style_borderRidge {
+  border-style: ridge;
+}
+
+.style #style_borderInset {
+  border-style: inset;
+}
+
+.style #style_borderOutset {
+  border-style: outset;
+}
+
+.style #style_borderNone {
+  border-style: none;
+}
+
+.style #style_borderHidden {
+  border-style: hidden;
+}
+
+.style #style_borderMix {
+  border-style: dotted dashed solid double;
+  border-width: 2px 3px 1px 4px;
+  border-color: red green yellow blue;
+}
+
+.style #style_borderTop {
+  border-top: double 4px purple;
+}
+
+.style #style_borderRight {
+  border-right: double 4px purple;
+}
+
+.style #style_borderBottom {
+  border-bottom: double 4px purple;
+}
+.style #style_borderLeft {
+  border-left: double 4px purple;
+}
+
+.style #style_borderNormal {
+  border: 2px solid red;
+}
+
+.style #style_borderRounder {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.style #style_borderRound {
+  border: 2px solid red;
+  border-radius: 20px;
+}
+
