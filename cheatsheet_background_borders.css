@@ -1,5 +1,6 @@
 /*==================================
 My practice and cheatsheet CSS page
+backgrounds and borders playground
 ===================================*/
 
 /*================
@@ -12,7 +13,14 @@ declare variables
 /*===============
 main page layout
 ================*/
+.cheatsheet {
+  background-color: black;
+  color: white;
+}
 
+p {
+  font: 1.5em Arial;
+}
 /*===============
 section layout
 ================*/
