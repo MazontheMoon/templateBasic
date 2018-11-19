@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <html lang="en-US">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My sandbox for practicing code and cheatsheet">
+    <title>CSS and HTML cheatsheet - text styles</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+  <!--++++++++++++++++++++++++++++++++++
+My practice and cheatsheet HTML page
+    text styling playground
+++++++++++++++++++++++++++++++++++++-->
+<main class="container">
+  <section class="cheatsheet">
+    <article class="classroom">
+      <!--Special characters section-->
+      <div class="style char">
+        <h1>My HTML and CSS Bible<br>Know your HTML tags</h1>
+        <h4>Special Characters</h4>
+        <p>&lt; is & lt ;<br>&gt; is & gt ;<br>&quot; is  quot ;<br>&apos; is & apos ;<br>&amp; is  & amp ;</p>
+      </div>
+      <!--font elements section-->
+      <div class="style font-elements">
+        <h1>This is a h1.</h1>
+        <h2>This is a h2.</h2>
+        <h3>This is a h3.</h3>
+        <h4>This is a h4.</h4>
+        <h5>This is a h5.</h5>
+        <p>This is p</p>
+        <p>All text inside an element is all affected as one single entity.</p>
+      </div>
+      <!--Font families section-->
+      <div class="style fontFamily">
+        <p>Web safe fonts {font-family} </p>
+        <ul>
+          <li id="font-arial">Arial</li>
+          <li id="font-cn">Courier New</li>
+          <li id="font-georgia">Georgia</li>
+          <li id="font-tnw">Times New Roman</li>
+          <li id="font-tms">Trebuchet MS</li>
+          <li id="font-verdana">Verdana</li>
+        </ul> 
+        <p>Default fonts</p>
+        <ul>
+          <li id="font-serif">serif</li>
+          <li id="font-sansserif">sans-serif</li>
+          <li id="font-monospace">monospace</li>
+          <li id="font-cursive">cursive</li>
+          <li id="font-fantasy">fantasy</li>
+        </ul>
+      </div>
+      <!--Font size section-->
+      <div class="style fontSize">
+        <p>Default font size is 16px</p>
+        <p>This is 1.5em size</p>
+        <p>This is 2em size</p>
+        <p>This is 2.5em size</p>
+        <p>This is 3em size</p>
+        <p>This is 3.5em size</p>
+        <p>This is 4em size</p>
+      </div>
+      <!--Font weight, style, text transform and text decoration section-->
+      <div class="style fontWeight">
+        <p>Fonts can be styled as <span class="font_normal">normal</span>, as <span class="font_italic">italic</span>, or as <span class="font_oblique">oblique.</span></p>
+        <p>Font weight can be <span class="font_normal">normal</span>, <span class="font_bold">bold</span>, <span class="font_lighter">lighter</span>, <span class="font_bolder">bolder</span>, or can be fine tuned using numerical values from <span class="font_100">100</span> - <span class="font_900">900</span></p>
+        <p>Text transform options are <span class="font-trans-none">none</span>, <span class="font-trans-up">uppercase</span>, <span class="font-trans-lo">lowercase</span>, <span class="font-trans-cap">capitalise</span>, and <span class"font-trans-full">full-width</span>.</p>
+        <p>Text decoration options are <span class="text-dec-none">none</span>, <span class="text-dec-un">underline</span>, <span class="text-dec-ov">overline</span>, <span class="text-dec-unov">underline and overline together</span>, and <span class="text-dec-line">line-through</span>.<br>The text decoration line can be styled as <span class="text-dec-line-solid">solid</span>, <span class="text-dec-line-double">double</span>, <span class="text-dec-line-dot">dotted</span>, <span class="text-dec-line-dash">dashed</span> and <span class="text-dec-line-wavy">wavy</span>.</p>
+      </div>
+      <!--Text drop shadows section-->
+      <div class=" style text-shadows">
+        <p>Text <span class="text-shad">drop shadows</span> have 4 properties:</p>
+        <ol>
+          <li>The horizontal offset</li>
+          <li>The vertical offset</li>
+          <li>The blur radius (default = 0)</li>
+          <li>Base colour (default = black)</li>
+        </ol>
+        <p>Multiple <span class="text-shadM">shadows</span> can also be added to the same text.<br><span class="text-shad-h">Shadow</span> with horizontal offset<br><span class="text-shad-v">Shadow</span> with verticle offset<br><span class="text-shad-nb">Shadow</span> with no blur<br> <span class="text-shad-b">Shadow</span> with blur</p>
+      </div>
+      <!--Text alignment section-->
+      <div class="style text-align">
+        <p>Text alignment has 4 options:</p>
+        <ol>
+          <li id="text-align-left">Left</li>
+          <li id="text-align-right">Right</li>
+          <li id="text-align-center">Center</li>
+          <li id="text-align-justify">Justify Justify Justify Justify Justify Justify Justify Justify???</li>
+        </ol>
+        <p id="text-align-lh">Line height can take most size and length units but recommend 1.5 - 2 (This is 2)</p>
+        <p id="text-align-lspace">Letter spacing is not commonly used but allows you to set the spacing between letters.</p>
+        <p id="text-align-wspace">Word spacing is not commonly used but allows you to set the spacing between words.</p>
+      </div>
+      <!--not commonly used font options section-->
+      <div class="style font-misc">
+        <p>This is how normal looks!</p>
+        <p id="font-misc-variant">Font variant switches between normal and small caps.</p>
+        <p id="font-misc-kern">Font Kerning can be on or off and defines how letters are spaced - not the same as letter-spacing! Default is auto which is set by browser.<br><span id="font-misc-kernOFF">This is kerning set to off.</span></p>
+        <p>Other font options include (examples not relevant)</p>
+        <ul>
+          <li>font-feature-settings switches various OpenType font features on and off</li>
+          <li>font-variant-alternates controls the use of alternate glyphs on a given font-face</li>
+          <li>font-variant-caps controls the use of alternat capital glyphs</li>
+          <li>font-varaint-east-asian controls the use of East-Asian glyphs(CH and JP)</li>
+          <li>
+        </ul>
+      </div>
+    </article>
+  </section>
+</main>
+  </body>
+</html>
