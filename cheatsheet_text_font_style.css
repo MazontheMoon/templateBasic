@@ -1,0 +1,371 @@
+/*==================================
+My practice and cheatsheet CSS page
+===================================*/
+
+/*================
+declare variables
+=================*/
+:root {
+  --black: #262626;
+  --white: #E0E0E0; 
+}
+
+/*===============
+main page layout
+================*/
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*===============
+cheatsheet layout
+================*/
+.classroom {
+  display: flex;
+  flex-flow: row wrap;
+}
+.style {
+  background-color: var(--white);
+  border: solid 2px black;
+  margin: 5px;
+  padding: 10px;
+  font: 1.5em Arial;
+  padding: 5px;
+}
+
+/*=================
+Special characters
+==================*/
+.char {
+  border: solid 5px red;
+  text-align: center;
+}
+
+/*================
+Font element types
+=================*/
+.font-elements {
+  border: solid 5px green;
+  text-align: center;
+}
+
+/*===============
+Font families
+================*/
+.fontFamily {
+  border: solid 5px blue;
+  text-align: center;
+}
+
+.fontFamily ul {
+  list-style: none;
+}
+ 
+#font-arial {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+#font-cn {
+  font-family: "Courier New", monospace;
+}
+
+#font-georgia {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+#font-tnw {
+  font-family: "Times New Roman", Georgia, serif;
+}
+#font-tma {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+#font-Verdana {
+  font-family: Verdana, "Trebuchet MS", sans-serif;
+}
+
+#font-serif {
+  font-family: serif;
+}
+
+#font-sanserif {
+  font-family: san-serif;
+}
+
+#font-monospace {
+  font-family: monospace;
+}
+
+#font-cursive {
+  font-family: cursive;
+}
+
+#font-fantasy {
+  font-family: fantasy;
+}
+/*===============
+Font size
+================*/
+.fontSize {
+  border: solid 5px yellow;
+  text-align: center;
+}
+
+.fontSize p:nth-child(1) {
+  font-size: 1em;
+}
+
+.fontSize p:nth-child(2) {
+  font-size: 1.5em;
+}
+
+.fontSize p:nth-child(3) {
+  font-size: 2em;
+}
+
+.fontSize p:nth-child(4) {
+  font-size: 2.5em;
+}
+
+.fontSize p:nth-child(5) {
+  font-size: 3em;
+}
+
+.fontSize p:nth-child(6) {
+  font-size: 3.5em;
+}
+
+.fontSize p:nth-child(7) {
+  font-size: 4em;
+}
+
+/*===============
+Font Weight
+================*/
+.fontWeight {
+  border: solid 5px cyan;
+  text-align: center;
+}
+
+.fontWeight .font_normal {
+  font-style: normal;
+  font-weight: normal;
+}
+
+.fontWeight .font_italic {
+  font-style: italic;
+}
+
+.fontWeight .font_oblique {
+  font-style: oblique;
+}
+
+.fontWeight .font_bold {
+  font-weight: bold;
+}
+
+.fontWeight .font_lighter {
+  font-weight: lighter;
+}
+
+.fontWeight .font_bolder {
+  font-weight: bolder;
+}
+
+.fontWeight .font_100 {
+  font-weight: 100;
+}
+
+.fontWeight .font_900 {
+  font-weight: 900;
+}
+
+/*===============
+Font transform
+================*/
+.fontWeight .font-trans-none {
+  text-transform: none;
+}
+
+.fontWeight .font-trans-up {
+  text-transform: uppercase;
+}
+
+.fontWeight .font-trans-lo {
+  text-transform: lowercase;
+}
+
+.fontWeight .font-trans-cap {
+  text-transform: capitalize;
+}
+
+.fontWeight .font-trans-full {
+  text-transform: full-width;
+}
+
+/*===============
+Text decoration
+================*/
+.fontWeight .text-dec-none {
+  text-decoration: none;
+  text-decoration-color: cyan;
+}
+
+.fontWeight .text-dec-un {
+  text-decoration: underline;
+  text-decoration-color: cyan;
+}
+
+.fontWeight .text-dec-ov {
+  text-decoration: overline;
+  text-decoration-color: cyan;
+}
+
+.fontWeight .text-dec-unov {
+  text-decoration: underline overline;
+  text-decoration-color: yellow;
+}
+
+.fontWeight .text-dec-line {
+  text-decoration: line-through;
+  text-decoration-color: cyan;
+}
+
+.fontWeight .text-dec-line-solid {
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+.fontWeight .text-dec-line-double {
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+.fontWeight .text-dec-line-dot {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.fontWeight .text-dec-line-dash {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+}
+
+.fontWeight .text-dec-line-wavy {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+/*===============
+Text Drop Shadows
+================*/
+.text-shadows {
+  border: solid 5px violet;
+  text-align: center;
+}
+
+.text-shadows .text-shad {
+  text-shadow: 4px 4px 5px violet;
+}
+
+.text-shadows .text-shadM {
+  text-shadow: -1px -1px 1px #aaa,
+               0px 4px 1px rgba(0,0,0,5),
+               4px 4px 5px rgba(0,0,0,7),
+               0px 0px 7px rgba(0,0,0,4);
+}
+
+.text-shadows .text-shad-h {
+  text-shadow: 5px 0px 0px violet;
+}
+
+.text-shadows .text-shad-v {
+  text-shadow: 0px 5px 0px violet;
+}
+
+.text-shadows .text-shad-nb {
+  text-shadow: 5px 5px 0px violet;
+}
+
+.text-shadows .text-shad-b {
+  text-shadow: 5px 5px 4px violet;
+}
+
+/*===============
+Text Alignment
+================*/
+.text-align {
+  border: solid 5px silver;
+}
+
+.text-align #text-align-left {
+  text-align: left;
+}
+
+.text-align #text-align-right {
+  text-align: right;
+}
+
+.text-align #text-align-center {
+  text-align: center;
+}
+
+.text-align #text-align-justify {
+  text-align: justify;
+}
+
+.text-align #text-align-lh {
+  line-height: 2;
+}
+
+.text-align #text-align-lspace{
+  letter-spacing: 5px;
+} 
+
+.text-align #text-align-wspace{
+  word-spacing: 25px;
+} 
+
+/*===============
+Uncommon font 
+================*/
+.font-misc {
+  border: solid 5px yellow;
+}
+
+.font-misc #font-misc-variant {
+  font-variant: small-caps;
+}
+
+.font-misc #font-misc-kern{
+  font-kerning: normal;
+}
+
+.font-misc #font-misc-kernOFF{
+  font-kerning: none;
+}
+
+/*===============
+Text Layout
+================*/
+.text-layout {
+  border: solid 5px indigo;
+}
+
+#text-layout-indent {
+  text-indent: 3em;
+}
+
+/*===============
+Font shorthand
+================*/
+.font-short {
+  border: solid 5px gold;
+  font: italic normal bold normal 1em/1.5 Helvetica, Arial, sans-serif;
+}
