@@ -26,10 +26,7 @@ html {
 /*===============
 cheatsheet layout
 ================*/
-.classroom {
-  display: flex;
-  flex-flow: row wrap;
-}
+
 .style {
   background-color: var(--white);
   border: solid 2px black;
@@ -366,6 +363,6 @@ Text Layout
 Font shorthand
 ================*/
 .font-short {
-  border: solid 5px gold;
+  border: solid 5px cyan;
   font: italic normal bold normal 1em/1.5 Helvetica, Arial, sans-serif;
 }
