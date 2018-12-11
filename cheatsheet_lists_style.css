@@ -1,0 +1,135 @@
+/*==================================
+My practice and cheatsheet CSS page
+===================================*/
+
+/*================
+declare variables
+=================*/
+:root {
+ 
+}
+
+/*===============
+main page layout
+================*/
+html {
+  background: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  padding: 5px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+ul,ol,dl,p {
+  font-size: 1.5rem;
+}
+
+li, p, dd, dt {
+  line-height: 1.5;
+}
+
+.style {
+  background-color: var(--white);
+  border: solid 2px red;
+  margin: 5px;
+  padding: 5px;
+}
+/*list style types or bullet points*/
+
+#style-type-bullet ul li:nth-child(1){
+  list-style-type: circle;
+}
+
+#style-type-bullet ul li:nth-child(2){
+  list-style-type: disc;
+}
+
+#style-type-bullet ul li:nth-child(3){
+  list-style-type: square;
+}
+
+#style-type-bullet ul li:nth-child(4){
+  list-style-type: none;
+}
+
+/*list style types for numbered lists*/
+
+#style-type-number ol li:nth-child(1) {
+  list-style-type: decimal;
+}
+
+#style-type-number ol li:nth-child(2) {
+  list-style-type: decimal-leading-zero;
+}
+
+#style-type-number ol li:nth-child(3) {
+  list-style-type: lower-alpha;
+}
+
+#style-type-number ol li:nth-child(4) {
+  list-style-type: lower-latin;
+}
+
+#style-type-number ol li:nth-child(5) {
+  list-style-type: lower-roman;
+}
+
+#style-type-number ol li:nth-child(6) {
+  list-style-type: upper-alpha;
+}
+
+#style-type-number ol li:nth-child(7) {
+  list-style-type: upper-roman;
+}
+
+/*list style positions*/
+#style-position ul li:nth-child(2) {
+  list-style-position: inside;
+}
+
+#style-position ul li:nth-child(3) {
+  list-style-position: outside;
+}
+
+/*list style images for bullets*/
+#style-image ul li:nth-child(1) {
+  list-style-type: square;
+  list-style-image: url("");
+}
+
+#style-image ul li:nth-child(2) {
+  padding-left: 2rem;
+  background-image: url(star.svg);
+  background-position: 0 0;
+  background-size: 1.6rem 1.6rem;
+  background-repeat: no-repeat;
+}
+
+/*list style with strings for bullets*/
+#style-string ul {
+  list-style: none;
+}
+
+#style-string ul li:before {
+  content: "+";
+  padding-right: 5px;
+}
+
