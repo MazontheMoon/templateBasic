@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <html lang="en-US">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My sandbox for practicing code">
+    <title>CSS and HTML cheatsheet - list styles</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+  <!--++++++++++++++++++++++++++++++++++
+My practice and cheatsheet HTML page
+    list styling playground
+++++++++++++++++++++++++++++++++++++-->
+    <main>
+  <article>
+    <!--list types -->
+    <section id="intro" class="style">
+      <h1>Lists, lists and more  lists</h1>
+      <ul> 
+        <li>Unordered</li>
+        <li>List</li>
+      </ul>
+      <ol>
+        <li>Ordered</li>
+        <li>Or</li>
+        <li>Numbered</li>
+        <li>Lists</li>
+      </ol>
+      <dl>
+        <dt>Description List</dt>
+        <dd>Think dictionary style list</dd>
+      </dl>
+    </section>
+    <!--bullet list icons-->
+    <section id="style-type-bullet" class="style">
+      <p>list-style-type sets the type of bullets to use</p>
+      <ul>
+        <li>circle</li>
+        <li>disc</li>
+        <li>square</li>
+        <li>none</li>
+        <li>default</li>
+      </ul>
+    </section>
+    <!--numbered list options-->
+    <section id="style-type-number" class="style">
+      <p>Numbered lists can also be set</p>
+      <ol>
+        <li>decimal</li>
+        <li>decimal leading zero</li>
+        <li>lower alpha</li>
+        <li>lower latin</li>
+        <li>lower roman</li>
+        <li>upper alpha</li>
+        <li>upper latin</li>
+        <li>upper roman</li>
+        <li>default</li> 
+      </ol>        
+    </section>
+    <!--bullet position-->
+    <section id="style-position" class="style">
+      <p>list-style-position sets whether bullet appears inside the list items or outside and before each item</p>
+      <ul>
+        <li>default</li>
+        <li>inside</li>
+        <li>outside</li>
+      </ul>
+    </section>
+    <!--images for bullets-->
+    <section id="style-image" class="style">
+      <p>using <pre>list-style-image: url();</pre></p><p>allows you to choose image to use as bullets - however is limited in terms of controlling position or size. <br>Instead can use the background family of properites (don't forget to set to no-repeat)</p>
+      <ul>
+        <li>image</li>
+        <li>background-image</li>
+      </ul>
+    </section>
+    <!--string content for bullets-->
+    <section id="style-string" class="style">
+      <ul>
+        <li>You can also insert "string" content to look like a bullet</li>
+      </ul>
+    </section>
+    <!--shorthand-->
+    <section id="shorthand" class="style">
+      <pre>ul { list-style-type: square; list-style-image: url(example.png); list-style-position: inside;}</pre>
+      <p>could be written as</p>
+      <pre>ul { square url(example.png) inside; }</pre>
+      <p>Values can be listed in any order and can use 1, 2 , or all 3. Defaults not specified are disc none outside.</p>
+    </section>
+    <!--list counting control-->
+    <section id="list-count-control" class="style">
+      <ol start="4" reversed>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ol>
+      <p>or to be really annoying...</p>
+      <ol> 
+        <li value="3">1</li>
+        <li value="3">2</li>
+        <li value="6">3</li>
+        <li value="9">4</li>
+        <li value="12">5</li>
+      </ol>
+    </section>
+  </article>
+</main>
+<footer>
+</footer>
+</body>
+</html>
