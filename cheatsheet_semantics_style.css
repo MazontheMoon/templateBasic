@@ -1,0 +1,42 @@
+/*==================================
+My practice and cheatsheet CSS page
+===================================*/
+
+/*================
+declare variables
+=================*/
+:root {
+  --black: #262626;
+  --white: #E0E0E0; 
+}
+
+/*===============
+main page layout
+================*/
+html {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black);
+  color: var(--white);
+  font: 1.2rem Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*===============
+cheatsheet layout
+================*/
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  border: dotted 3px;
+  margin: 5px;
+  padding: 5px;
+}
